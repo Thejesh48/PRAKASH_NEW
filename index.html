@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROYAL MEDIA HOUSE  | Event Technology</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+<style>
+  .carousel-caption h1{
+  font-family: 'Playfair Display', serif;
+}
+
+:root{
+  --primary:#0d6efd;
+  --dark:#111;
+  --light:#f8f9fa;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  background:#f2f4f8;
+  color:#333;
+  line-height:1.6;
+}
+
+/* Animations */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Header */
+header{
+  background:linear-gradient(135deg,#000,#1a1a1a);
+  color:#fff;
+  text-align:center;
+  /* padding:50px 20px; */
+  animation:fadeUp 1s ease;
+}
+
+header h1{
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:1rem;
+  opacity:0.9;
+}
+
+/* Section */
+section{
+  padding:40px 15px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.section-title h2{
+  color:var(--primary);
+  margin-bottom:8px;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#fff;
+  border-radius:15px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  animation:fadeUp 1.2s ease;
+}
+
+.card h3{
+  color:var(--primary);
+  margin-bottom:12px;
+}
+
+.card ul{
+  list-style:none;
+}
+
+.card li{
+  margin-bottom:8px;
+}
+
+.card i{
+  color:var(--primary);
+  margin-right:8px;
+}
+
+/* Why Choose */
+.why{
+  background:#fff;
+  border-radius:15px;
+  padding:25px;
+  max-width:800px;
+  margin:auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  animation:fadeUp 1.3s ease;
+}
+
+.why div{
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:15px;
+}
+
+.why i{
+  font-size:22px;
+  color:var(--primary);
+  margin-right:12px;
+}
+
+/* Vision */
+.vision{
+  background:var(--primary);
+  color:#fff;
+  border-radius:15px;
+  padding:30px;
+  max-width:900px;
+  margin:auto;
+  animation:fadeUp 1.4s ease;
+}
+
+.vision h3{
+  margin-bottom:10px;
+}
+
+/* Footer */
+footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:30px;
+}
+
+footer i{
+  margin:0 6px;
+  color:var(--primary);
+}
+.carousel-img-wrapper{
+  position: relative;
+}
+
+.carousel-img-wrapper img{
+  height:300px;
+  object-fit:cover;
+}
+
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.55); /* Black overlay */
+}
+
+.carousel-caption{
+  z-index:10;
+  top:50%;
+  transform:translateY(-50%);
+  bottom:auto;
+}
+
+.carousel-caption h1{
+  font-size:1.8rem;
+}
+
+.carousel-caption p{
+  font-size:1.1rem;
+}
+
+/* Mobile */
+@media(max-width:576px){
+  .carousel-img-wrapper img{
+    height:220px;
+  }
+  .carousel-caption h1{
+    font-size:1.4rem;
+  }
+}
+.footer{
+  background:#000;
+  color:#fff;
+  text-align:center;
+  padding:20px 10px;
+}
+
+.social-icons{
+  margin:10px 0;
+}
+
+.social-icons img{
+  width:28px;
+  height:28px;
+  margin:0 8px;
+  transition:transform 0.3s ease;
+}
+
+.social-icons img:hover{
+  transform:scale(1.15);
+}
+
+/* Mobile */
+@media(max-width:576px){
+  .social-icons img{
+    width:24px;
+    height:24px;
+  }
+}
+body{margin:0}
+.royal-wrapper{
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:#fff;
+  padding:90px 16px;
+}
+
+.royal-hero{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+.royal-hero h1{
+  font-size:44px;
+  background:linear-gradient(90deg,#00c6ff,#f0f);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.tagline{color:#ddd;margin:10px 0 25px}
+.intro{color:#ccc;line-height:1.7}
+button{
+  margin-top:23px;
+  padding:12px 26px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(90deg,#00c6ff,#f0f);
+  color:#fff;
+  cursor:pointer;
+}
+
+.royal-section{
+  max-width:1100px;
+  margin:90px auto;
+}
+h2{text-align:center;margin-bottom:35px}
+
+.royal-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.royal-card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(12px);
+  padding:30px;
+  border-radius:22px;
+  cursor:pointer;
+  transition:.35s;
+}
+.royal-card:hover{
+  transform:translateY(-10px);
+  background:rgba(255,255,255,.2);
+}
+
+.royal-approach{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+}
+.royal-approach ul{
+  list-style:none;
+  padding:0;
+}
+.royal-approach li{margin:10px;color:#ddd}
+
+.royal-pill{
+  background:rgba(255,255,255,.15);
+  padding:16px;
+  border-radius:40px;
+  text-align:center;
+}
+
+.royal-list{
+  max-width:700px;
+  margin:auto;
+}
+.royal-list div{
+  padding:14px;
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.royal-closing{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  color:#ddd;
+}
+
+/* Modal */
+.royal-modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  backdrop-filter:blur(6px);
+  justify-content:center;
+  align-items:center;
+}
+.royal-modal-box{
+  background:#fff;
+  color:#333;
+  max-width:600px;
+  padding:35px;
+  border-radius:18px;
+  animation:scale .3s ease;
+}
+.royal-modal-box span{
+  float:right;
+  cursor:pointer;
+}
+
+/* Animations */
+.fade-up{
+  animation:fadeUp 1s ease;
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:none}
+}
+@keyframes scale{
+  from{transform:scale(.9);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+.icon-circle{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:18px;
+  font-size:26px;
+  color:#fff;
+  transition:.35s ease;
+}
+
+.icon-circle.photo{
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+}
+.icon-circle.video{
+  background:linear-gradient(135deg,#a18cd1,#fbc2eb);
+}
+.icon-circle.sound{
+  background:linear-gradient(135deg,#43e97b,#38f9d7);
+}
+
+.royal-card:hover .icon-circle{
+  transform:rotate(6deg) scale(1.15);
+  box-shadow:0 0 25px rgba(255,255,255,.45);
+}
+.carousel-caption{
+  /* bottom:15%; */
+  /* text-align:center; */
+  animation:captionFadeUp 1.s ease;
+}
+
+.carousel-caption h1{
+  font-family:'Poppins', sans-serif;
+  font-size:clamp(32px, 4vw, 52px);
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:12px;
+
+  background:linear-gradient(90deg,#00c6ff,#f0f);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:0 6px 25px rgba(0,0,0,0.45);
+}
+
+.carousel-caption p{
+  font-family:'Poppins', sans-serif;
+  font-size:clamp(16px, 2vw, 20px);
+  font-weight:400;
+  color:#eaeaea;
+  letter-spacing:.5px;
+  text-shadow:0 4px 18px rgba(0,0,0,0.5);
+}
+
+/* Animation */
+@keyframes captionFadeUp{
+  from{
+    opacity:0;
+    transform:translateY(35px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.royal-section {
+  padding: 60px 20px;
+  background: #0c0c0c;
+  color: #fff;
+  text-align: center;
+}
+
+.royal-section h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* GRID: 2 COLUMNS */
+.royal-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+}
+.royal-item {
+  position: relative;
+  padding: 25px;
+  border-radius: 14px;
+  background: #1a1a1a;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* GRADIENT LAYER */
+.royal-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  color: #000;
+border:1px solid #00c6ff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0; /* behind text */
+}
+
+/* TEXT ABOVE GRADIENT */
+.royal-item span {
+  position: relative;
+  z-index: 1;
+}
+
+/* HOVER EFFECT */
+.royal-item:hover::before {
+  opacity: 1;
+}
+
+.royal-item:hover {
+  transform: translateY(-8px);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .royal-list {
+    grid-template-columns: 1fr;
+  }
+}
+.royal-item:hover span {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}.portfolio {
+  background: #0d0d0d;
+  padding: 60px 0;
+}
+
+.portfolio-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.portfolio-scroll img {
+  height: 260px;
+  min-width: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  scroll-snap-align: center;
+}
+
+.portfolio-scroll img:hover {
+  transform: scale(1.05);
+}
+
+/* Hide scrollbar */
+.portfolio-scroll::-webkit-scrollbar {
+  display: none;
+}
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+/* LEFT SIDE CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 14px;
+  border-radius: 50%;
+}
+/* 
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 5%;
+  width: 55px;
+  height: 55px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  z-index: 9999;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.7);
+} */
+ .language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 6px 10px;
+  z-index: 9999;
+}
+
+.language-switcher a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 0 6px;
+}
+
+.language-switcher a:hover {
+  color: #c89b3c;
+}
+.lang-sticky {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 13px;
+}
+
+.lang-toggle {
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #1a1a1a;
+  border-radius: 6px;
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+  min-width: 120px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.lang-menu li a {
+  display: block;
+  padding: 6px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.lang-menu li a:hover {
+  background: #2a2a2a;
+}
+.lang-sticky {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.lang-toggle {
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #1a1a1a;
+  list-style: none;
+  padding: 4px 0;
+  margin: 0;
+  min-width: 120px;
+  border-radius: 6px;
+  display: none;
+}
+
+.lang-menu.show {
+  display: block;
+}
+
+.lang-menu li a {
+  display: block;
+  padding: 6px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.lang-menu li a:hover {
+  background: #2a2a2a;
+}
+
+</style>
+</head>
+
+<body>
+  <!-- Sticky Language Button -->
+<div class="lang-sticky">
+  <button class="lang-toggle" onclick="toggleLangMenu()">
+    LANGUAGE <i class="fa-solid fa-angle-down"></i>
+  </button>
+
+  <ul class="lang-menu" id="langMenu">
+    <li><a href="#" onclick="changeLanguage('en', event)">English</a></li>
+    <li><a href="#" onclick="changeLanguage('kn', event)">ಕನ್ನಡ</a></li>
+    <li><a href="#" onclick="changeLanguage('hi', event)">हिंदी</a></li>
+  </ul>
+</div>
+
+
+  
+  <header>
+  <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-img-wrapper">
+          <img src="1p.png" class="d-block w-100" alt="ROYAL MEDIA HOUSE ">
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-caption">
+          <h1>ROYAL MEDIA HOUSE </h1>
+          <p>Elevating Experiences through Technology & Infrastructure</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-img-wrapper">
+          <img src="2p.png" class="d-block w-100" alt="Event Rentals">
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-caption">
+          <h1><i class="fa-solid fa-music"></i> Event Equipment Rentals</h1>
+          <p>LED Screens • Sound Systems • Stage Lighting • Trussing</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+     <div class="carousel-item">
+  <div class="carousel-img-wrapper">
+    <img src="3p.png" class="d-block w-100" alt="Photography">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="carousel-caption">
+    <h1>📸 Professional Photography</h1>
+    <p>16+ Years of Experience • Events • Corporate • Weddings</p>
+  </div>
+</div>
+
+
+     
+
+    </div>
+  </div>
+</header>
+
+<!-- 
+<section style="padding:55px 15px; background:#ffffff;">
+  
+  <div style="text-align:center; margin-bottom:40px;">
+    <h2 style="
+      font-size:30px;
+      background:linear-gradient(90deg,#0d6efd,#6610f2);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    ">
+      Our Core Divisions
+    </h2>
+    <p style="color:#666; margin-top:6px;">
+      Complete solutions from Tent to Tech
+    </p>
+  </div>
+
+  <div style="
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+  ">
+
+    <div style="
+      background:#f9fbff;
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.08);
+      border-left:6px solid #0d6efd;
+    ">
+      <h3 style="margin-bottom:14px;">🎤 Event Equipment Rentals</h3>
+      <p style="color:#555;">We provide the backbone for events of every scale.</p>
+      <ul style="margin-top:12px; padding-left:18px; color:#444;">
+        <li>LED Screens & Projectors</li>
+        <li>Concert-grade Sound Systems</li>
+        <li>Trussing & Modular Stages</li>
+      </ul>
+    </div>
+
+    <div style="
+  background:#f9fbff;
+  border-radius:18px;
+  padding:26px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+  border-left:6px solid #6610f2;
+">
+  <h3 style="margin-bottom:14px;">📸 Photography & Videography</h3>
+  <p style="color:#555;">Capturing moments with creativity, clarity, and emotion.</p>
+  <ul style="margin-top:12px; padding-left:18px; color:#444;">
+    <li>Event Photography</li>
+    <li>Cinematic Videography</li>
+    <li>Drone Aerial Shoots</li>
+    <li>Live Event Coverage</li>
+  </ul>
+</div>
+
+
+    <div style="
+      background:#f9fbff;
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 15px 35px rgba(0,0,0,0.08);
+      border-left:6px solid #20c997;
+    ">
+      <h3 style="margin-bottom:14px;">🛒 Equipment Sales</h3>
+      <p style="color:#555;">Professional-grade equipment for permanent use.</p>
+      <ul style="margin-top:12px; padding-left:18px; color:#444;">
+        <li>Sound Systems & Amplifiers</li>
+        <li>Projectors & Screens</li>
+        <li>Stage Lighting & Controllers</li>
+      </ul>
+    </div>
+
+  </div>
+</section> -->
+
+
+<section class="royal-wrapper">
+
+  <!-- HERO -->
+  <div class="royal-hero fade-up">
+    <h1>Royal Media House</h1>
+    <p class="tagline">Bringing People, Moments, and Sound Together</p>
+    <p class="intro">
+      Royal Media House is a Bangalore-based event media and sound company,
+      working quietly behind the scenes to help events unfold smoothly
+      and leave a lasting impression.
+    </p>
+    <button onclick="openModal('about')">Read More</button>
+  </div>
+
+  <!-- WHAT WE DO -->
+  <div class="royal-section">
+    <h2>What We Do</h2>
+
+  <div class="royal-grid">
+
+  <div class="royal-card" onclick="openModal('photo')">
+    <div class="icon-circle photo">
+      <i class="fa-solid fa-camera-retro"></i>
+    </div>
+    <h3>Photography</h3>
+    <p>People, expressions, and atmosphere—captured with respect.</p>
+  </div>
+
+  <div class="royal-card" onclick="openModal('video')">
+    <div class="icon-circle video">
+      <i class="fa-solid fa-video"></i>
+    </div>
+    <h3>Videography</h3>
+    <p>Clear, patient films built for long-term value.</p>
+  </div>
+
+  <div class="royal-card" onclick="openModal('sound')">
+    <div class="icon-circle sound">
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+    <h3>Sound</h3>
+    <p>Balanced audio that supports every moment.</p>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- APPROACH -->
+  <div class="royal-approach fade-up">
+    <h2>Our Approach</h2>
+    <p>
+      Professionalism is felt more than it is seen.
+    </p>
+    <ul>
+      <li>We plan quietly</li>
+      <li>We execute precisely</li>
+      <li>We leave behind work that speaks for itself</li>
+    </ul>
+  </div>
+
+  <!-- WHY US -->
+  <div class="royal-section" style="background-color: #222729 !important ; padding:30px;">
+    <h2>Why Clients Continue Working With Us</h2>
+
+    <div class="royal-grid small">
+      <div class="royal-pill">Calm, Professional Presence</div>
+      <div class="royal-pill">Unified Services</div>
+      <div class="royal-pill">Consistent Execution</div>
+      <div class="royal-pill">Respect for Timelines</div>
+      <div class="royal-pill">Local Bangalore Support</div>
+    </div>
+  </div>
+<!-- CAPABILITIES -->
+<div class="royal-section">
+  <h2>Our Event Capabilities</h2>
+
+  <div class="royal-list">
+    <div class="royal-item">Institutional & Government Events</div>
+    <div class="royal-item">Corporate Events</div>
+    <div class="royal-item">Social & Family Celebrations</div>
+    <div class="royal-item">Event Design & Execution</div>
+    <div class="royal-item">End-to-End Event Management</div>
+  </div>
+</div>
+
+
+  <!-- CLOSING -->
+  <div class="royal-closing fade-up">
+    <p>
+      At Royal Media House, professionalism is not loud.
+      It is felt in clarity, in timing, and in trust.
+      When the day is done, what remains should feel true
+      to what unfolded.
+    </p>
+  </div>
+
+</section>
+
+
+<section id="portfolio" class="portfolio section">
+  <div class="container text-center mb-4">
+    <h2 class="fw-bold text-light">Our Event Gallery</h2>
+    <p class="text-light text-light">Explore our event setups.</p>
+  </div>
+
+  <div class="portfolio-scroll">
+    <img src="j1.jpeg" onclick="openLightbox(this)">
+    <img src="j2.jpeg" onclick="openLightbox(this)">
+    <img src="j3.jpeg" onclick="openLightbox(this)">
+    <img src="j5.jpeg" onclick="openLightbox(this)">
+    <img src="j6.jpeg" onclick="openLightbox(this)">
+    <img src="j7.jpeg" onclick="openLightbox(this)">
+    <img src="j8.jpeg" onclick="openLightbox(this)">
+   
+  </div>
+</section>
+<div id="lightbox">
+  <span class="close-btn" onclick="closeLightbox()">✕</span>
+  <img id="lightbox-img">
+</div>
+<script>
+  function openLightbox(img) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = img.src;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+
+<section style="padding:50px 15px; background:#f4f6fb;">
+  
+  <div style="text-align:center; margin-bottom:35px;">
+    <h2 style="
+      font-size:28px;
+      background:linear-gradient(90deg,#0d6efd,#6610f2);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    ">
+      Why Partner With ROYAL MEDIA HOUSE ?
+    </h2>
+    <p style="color:#555; margin-top:8px;">
+      Experience reliability, precision, and professional excellence
+    </p>
+  </div>
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+  ">
+
+    <!-- Card 1 -->
+    <div style="
+      background:#fff;
+      border-radius:16px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      border-top:5px solid #0d6efd;
+    ">
+      <h3 style="margin-bottom:10px;">📍 Strategic Location</h3>
+      <p style="color:#555;">
+        Based in Bangalore for fast response, smooth logistics, and rapid deployment.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="
+      background:#fff;
+      border-radius:16px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      border-top:5px solid #6610f2;
+    ">
+      <h3 style="margin-bottom:10px;">👔 Personalized Oversight</h3>
+      <p style="color:#555;">
+        Direct involvement by Mr. Prakash ensures quality, clarity, and attention to detail.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="
+      background:#fff;
+      border-radius:16px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      border-top:5px solid #20c997;
+    ">
+      <h3 style="margin-bottom:10px;">🧩 Inventory Breadth</h3>
+      <p style="color:#555;">
+        Complete “Tent to Tech” solutions under one trusted technical partner.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div style="
+      background:#fff;
+      border-radius:16px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+      border-top:5px solid #fd7e14;
+    ">
+      <h3 style="margin-bottom:10px;">🛠 Technical Precision</h3>
+      <p style="color:#555;">
+        Clean installations, reliable systems, and professional cable management.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="royalModal" class="royal-modal">
+  <div class="royal-modal-box">
+    <span onclick="closeModal()">✕</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+
+<section style="padding:40px 15px;">
+  <div class="section-title" style="text-align:center; margin-bottom:30px;">
+    <h2 style="
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    ">
+      Vision & Mission
+    </h2>
+  </div>
+
+  <div class="vision" style="
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    color:#fff;
+    background: linear-gradient(135deg, #000428, #004e92);
+  ">
+    <h3 style="margin-bottom:10px;">
+      Our Vision
+    </h3>
+    <p>
+      To be Bangalore’s most trusted name in event technology, transforming ordinary spaces into extraordinary experiences.
+    </p>
+
+    <h3 style="margin-top:20px;">
+      Our Mission
+    </h3>
+    <p>
+      Deliver seamless, high-quality technical support through cutting-edge equipment and meticulous planning.
+    </p>
+  </div>
+</section>
+<a href="https://wa.me/919999999999" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+
+
+
+<script>
+function toggleLangMenu() {
+  document.getElementById("langMenu").classList.toggle("show");
+}
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function (e) {
+  const langBox = document.querySelector(".lang-sticky");
+  if (!langBox.contains(e.target)) {
+    document.getElementById("langMenu").classList.remove("show");
+  }
+});
+</script>
+
+
+<!-- Hidden Google Translate element -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<!-- Hidden Google Translate element -->
+<div id="google_translate_element" style="display:none;"></div>
+<script>
+function toggleLangMenu() {
+  document.getElementById("langMenu").classList.toggle("show");
+}
+
+document.addEventListener("click", function(e) {
+  const langBox = document.querySelector(".lang-sticky");
+  if (!langBox.contains(e.target)) {
+    document.getElementById("langMenu").classList.remove("show");
+  }
+});
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,kn,hi',
+    autoDisplay: false
+  }, 'google_translate_element');
+
+  const savedLang = localStorage.getItem("selectedLanguage");
+  if (savedLang) {
+    setTimeout(() => setLang(savedLang), 600);
+  }
+}
+
+function setLang(lang) {
+  const select = document.querySelector(".goog-te-combo");
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+  }
+}
+
+function changeLanguage(lang, event) {
+  event.preventDefault();
+  localStorage.setItem("selectedLanguage", lang);
+  setLang(lang);
+
+  document.querySelector(".lang-toggle").innerHTML =
+    lang.toUpperCase() + ' <i class="fa-solid fa-angle-down"></i>';
+
+  document.getElementById("langMenu").classList.remove("show");
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,kn,hi',
+        autoDisplay: false
+    }, 'google_translate_element');
+
+    // Apply saved language on page load
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang) {
+        setTimeout(() => {
+            const select = document.querySelector(".goog-te-combo");
+            if (select) {
+                select.value = savedLang;
+                select.dispatchEvent(new Event("change"));
+            }
+        }, 600);
+    }
+}
+
+// Change language from menu
+function changeLanguage(lang, event) {
+    event.preventDefault();
+    localStorage.setItem('selectedLanguage', lang);
+
+    const select = document.querySelector(".goog-te-combo");
+    if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+    }
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<footer class="footer">
+  <p>Serving Corporate • Weddings • Commercial • Education</p>
+
+  <div class="social-icons">
+    <a href="#" target="_blank">
+      <img src="https://freepnglogo.com/images/all_img/facebook-logo.png" alt="Facebook" style="width: 40px; height: 40px;">
+    </a>
+    <a href="#" target="_blank">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/930/413/non_2x/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram" style="width: 70px; height: 70px;">
+    </a>
+    <a href="#" target="_blank">
+      <img src="https://static.vecteezy.com/system/resources/previews/016/716/468/original/whatsapp-icon-free-png.png" alt="WhatsApp" style="width: 40px; height: 40px;">
+    </a>
+  </div>
+
+  <p>© 2026 ROYAL MEDIA HOUSE </p>
+</footer>
+
+
+</body>
+</html>
