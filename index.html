@@ -935,13 +935,13 @@ border:1px solid #00c6ff;
   </div>
 
   <div class="portfolio-scroll">
-    <img src="j1.jpeg" onclick="openLightbox(this)">
-    <img src="j2.jpeg" onclick="openLightbox(this)">
-    <img src="j3.jpeg" onclick="openLightbox(this)">
-    <img src="j5.jpeg" onclick="openLightbox(this)">
-    <img src="j6.jpeg" onclick="openLightbox(this)">
-    <img src="j7.jpeg" onclick="openLightbox(this)">
-    <img src="j8.jpeg" onclick="openLightbox(this)">
+    <img src="j1.jpeg" onclick="openLightbox(this)" style="height: 400px;">
+    <img src="j2.jpeg" onclick="openLightbox(this)" style="height: 400px;">
+    <img src="j3.jpeg" onclick="openLightbox(this)" style="height: 400px;">
+    <img src="j5.jpeg" onclick="openLightbox(this)" style="height: 400px;">
+    <img src="j6.jpeg" onclick="openLightbox(this)" style="height: 400px;">
+    <img src="j7.jpeg" onclick="openLightbox(this)" style="height: 400px;"> 
+    <img src="j8.jpeg" onclick="openLightbox(this)" style="height: 400px;">
    
   </div>
 </section>
@@ -1095,6 +1095,37 @@ border:1px solid #00c6ff;
   <i class="bi bi-whatsapp"></i>
 </a>
 
+
+
+<!-- SCRIPT -->
+<script>
+function openModal(type){
+  const t=document.getElementById("modalTitle");
+  const p=document.getElementById("modalText");
+
+  if(type==="about"){
+    t.innerText="About Royal Media House";
+    p.innerText="Led by Jyothi Hegde, Royal Media House operates with calm preparation, respect for people, and thoughtful execution—ensuring every event unfolds smoothly.";
+  }
+  if(type==="photo"){
+    t.innerText="Photography";
+    p.innerText="We focus on people, expressions, and atmosphere—documenting events in a composed, genuine manner.";
+  }
+  if(type==="video"){
+    t.innerText="Videography";
+    p.innerText="Our films are patient and clear, designed to remain useful and honest long after the event concludes.";
+  }
+  if(type==="sound"){
+    t.innerText="Sound";
+    p.innerText="Audio is carefully planned, tested, and monitored so it supports the moment without overpowering it.";
+  }
+
+  document.getElementById("royalModal").style.display="flex";
+}
+function closeModal(){
+  document.getElementById("royalModal").style.display="none";
+}
+</script>
 
 
 
